@@ -1,4 +1,3 @@
-// AppleSample.js
 export const emptyAppleSample = {
   isExposed: false,
   isInternal: false,

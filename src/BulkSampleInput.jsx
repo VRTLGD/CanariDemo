@@ -81,7 +81,7 @@ const aspects = [
   },
 ];
 
-// Reusable container style for all main screens
+
 const containerStyle = {
   maxWidth: 900,
   minWidth: 320,
@@ -96,7 +96,7 @@ const containerStyle = {
 };
 
 const inputStyle = {
-  fontSize: 16, // Fixes mobile zoom on input focus
+  fontSize: 16, // Fixes mobile zoom on input focus? Maybe?
   flexGrow: 1,
   maxWidth: 120,
   padding: 6,

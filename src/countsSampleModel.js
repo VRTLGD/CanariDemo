@@ -1,4 +1,3 @@
-// countsSampleModel.js (optional)
 export function createCountsSample({
   blockID = "",
   row = "",

@@ -1,8 +1,8 @@
-// AppleSample.js
+
 export const emptyAppleSample = {
   isExposed: false,
-  sampleNumber: 0,       // Optional, or you can generate later
-  boxSize: '',           // "medida" in your original struct, just start empty
+  sampleNumber: 0,       
+  boxSize: '',           
   row: '',
   weightInGrams: 0,
   colorPercentage: 0,
