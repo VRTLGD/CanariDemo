@@ -167,14 +167,19 @@ export default function BulkSampleInput() {
   };
 
   const appleHasData = (apple) => {
-    return Object.values(apple).some(
-      (v) =>
-        v !== "" &&
-        v !== false &&
-        v !== null &&
-        !(typeof v === "number" && isNaN(v))
-    );
-  };
+  // Only consider numeric or text fields that actually matter
+  return (
+    (apple.row && apple.row.trim() !== "") ||
+    (apple.weightInGrams && apple.weightInGrams !== "") ||
+    (apple.colorPercentage && apple.colorPercentage !== "") ||
+    (apple.backgroundColorPercentage && apple.backgroundColorPercentage !== "") ||
+    (apple.pressure1 && apple.pressure1 !== "") ||
+    (apple.pressure2 && apple.pressure2 !== "") ||
+    (apple.brix && apple.brix !== "") ||
+    (apple.starch && apple.starch !== "")
+  );
+};
+
 
   const handleSubmit = async () => {
     if (!name.trim()) {

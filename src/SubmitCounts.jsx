@@ -95,7 +95,7 @@ export default function SubmitCounts() {
     }
 
     try {
-      const batchCollection = collection(db, "companyData/demo/demo/AppleCounts/batches");
+      const batchCollection = collection(db, "companyData/demo/demo/AppleCounts/counts");
       for (const count of countsQueue) {
         await addDoc(batchCollection, {
           createdAt: serverTimestamp(),
